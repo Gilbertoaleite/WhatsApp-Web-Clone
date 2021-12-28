@@ -1,0 +1,153 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WhatsApp Web</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/fd384f8db8.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div id="container">
+			<aside id="sideBar">
+				<div id="barraDeFerramentas">
+					<img
+						src="./img/eu.jpg"
+						class="fotoUsuario"
+						alt="Imagem do developer"
+					/>
+					<div class="auxIcon">
+						<i class="fas fa-spinner"></i>
+						<i class="fas fa-comment-alt"></i>
+						<i class="fas fa-ellipsis-v"></i>
+					</div>
+				</div>
+				<div id="containerNotification">
+					<i class="fas fa-bell-slash"></i>
+					<p id="receberNotification">Receba notificações</p>
+					<p id="ativarNotification">
+						Ativar notificações na area de trabalho
+						<i class="fas fa-angle-right"></i>
+					</p>
+				</div>
+				<div id="containerPesquisa">
+					<i id="porcurarContato" class="fas fa-search"></i>
+					<input
+						type="text"
+						name="search"
+						id="procura"
+						placeholder="Procurar ou começar uma nova conversa"
+					/>
+				</div>
+				<div id="containerContatos">
+					<div class="boxContato">
+						<a href="/index.html">
+						<img
+							src="./img/carla.jpg"
+							alt="user 2"
+							class="fotoUsuario"
+						/>
+						<div class="ifoUsuario">
+							<p class="nomeUsuario">Carla</p>
+							<p class="previewMenssage">
+								<i class="fas fa-check-double"></i>Oie, eu estou bem e vc?
+							</p>
+						</div>
+						<div class="infoMenssage">
+							<p class="horario">20:30</p>
+						</a>
+						</div>
+					</div>
+
+					<div class="boxContato">
+						<a href="/matheus.html">
+						<img
+							src="./img/matheus.jpg"
+							alt="Imagem do user 3"
+							class="fotoUsuario"
+						/>
+						<div class="ifoUsuario">
+							<p class="nomeUsuario">Matheus</p>
+							<p class="previewMenssage">Ficou muito massa o projeto!</p>
+						</div>
+						<div class="infoMenssage">
+							<p class="horario">19:44</p>
+						</a>
+						</div>
+					</div>
+					<div class="boxContato chatAtivo">
+						<img
+							src="./img/camila.jpg"
+							alt="Imagem do user 4"
+							class="fotoUsuario"
+						/>
+						<div class="ifoUsuario">
+							<p class="nomeUsuario">Camila</p>
+
+							<p class="previewMenssage">
+								<i id="Onecheck" class="fas fa-check"></i>Oiee estou com saudades.
+							</p>
+						</div>
+						<div class="infoMenssage">
+							<p class="horario">18:33</p>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<main id="chatArea">
+				
+				<nav id="chatNavBar">
+				
+					<div id="containerContactInfo">
+						<img
+							src="./img/camila.jpg"
+							alt="Imagem do user 4"
+							class="fotoUsuario"
+						/>
+						<p class="nomeUsuario">Camila</p>
+						
+					</div>
+					<div id="status"><p > visto por último hoje às 18:00</p></div>
+					
+					<ul id="containerFerramentasChat">
+						<li><i class="fas fa-search"></i></li>
+						<li><i class="fas fa-paperclip"></i></li>
+						<li><i class="fas fa-ellipsis-v"></i></li>
+					</ul>
+				</nav>
+				<div id="containerMenssages">
+					<div class="bg-image"></div>
+					<div class="chatMenssages">
+						<p class="remetenteMenssage">Oiee estou com saudades.</p>
+						<p class="destinMenssage">
+							Oiee Ca, também estou com saudades sua.?
+							<i id="Onecheck" class="fas fa-check"></i>
+						</p>
+					</div>
+				</div>
+				<div class="containerEnviarMenssage">
+					<i class="fas fa-grin"></i>
+					<input
+						type="text"
+						name="menssage"
+						id="inputUsuario"
+						placeholder="Digite uma menssagem"
+					/>
+					<i class="fas fa-microphone"></i>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,392 @@
+/** @format */
+
+* {
+	font-family: 'open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+#container {
+	height: 100vh;
+	position: relative;
+}
+
+/* Side Bar */
+#sideBar {
+	width: 25rem;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+#barraDeFerramentas {
+	width: 100%;
+	height: 2.8rem;
+	background-color: #eee;
+	padding-bottom: 0.9rem;
+}
+
+.fotoUsuario {
+	width: 3.5rem;
+	border-radius: 50%;
+	margin: 0.2rem;
+	background-color: #ccc;
+	padding-left: 2px;
+}
+
+.auxIcon {
+	float: right;
+	height: 3.75;
+	line-height: 5rem;
+	padding-right: 1rem;
+}
+
+.auxIcon i {
+	color: #80868a;
+	font-size: 1rem;
+	margin: 0 1rem 0 1rem;
+	cursor: pointer;
+}
+
+/* Container de Notificações */
+#containerNotification {
+	width: 100%;
+	height: 75px;
+	padding: 20px 0 0 70px;
+	background-color: #9de1fe;
+	color: #384c56;
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.fas.fa-bell-slash {
+	width: 3rem;
+	height: 3rem;
+	text-align: center;
+	line-height: 3rem;
+	border-radius: 50%;
+	font-size: 1.2rem;
+	color: #9de1fe;
+	background-color: #f5fcff;
+	position: absolute;
+	top: 20px;
+	left: 15px;
+}
+
+#containerNotification p {
+	margin: 0;
+}
+
+#containerNotification #receberNotification {
+	font-size: 15px;
+	margin-bottom: 2px;
+}
+
+#containerNotification #ativarNotification {
+	font-size: 13px;
+}
+
+/* Container de Pesquisa */
+#containerPesquisa {
+	width: 100%;
+	height: 50px;
+	padding: 7.5px 0 0 7.5px;
+	background-color: #f8f8f8;
+	position: relative;
+	color: #bdc1c3;
+	box-sizing: border-box;
+}
+
+#porcurarContato {
+	position: absolute;
+	left: 30px;
+	top: 18px;
+	font-size: 14px;
+}
+
+#procura {
+	border: none;
+	width: 385px;
+	height: 35px;
+	padding-left: 60px;
+	border-radius: 17.5px;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+#procura::placeholder {
+	color: #bdc1c3;
+}
+
+/* Container de Contatos */
+#containerContatos {
+	height: auto;
+	background-color: #fff;
+}
+
+.boxContato {
+	cursor: pointer;
+	height: 4.5rem;
+	background-color: #fff;
+	border-top: 1px solid #f2f2f2;
+	position: relative;
+	box-sizing: border-box;
+	padding-right: 0.5rem;
+}
+.boxContato:last-child {
+	border-bottom: 2px solid #f2f2f2;
+}
+.boxContato:hover {
+	background-color: #f4f5f5;
+}
+
+.chatAtivo {
+	background-color: #e9ebeb;
+}
+
+.chatAtivo.boxContato:hover {
+	background-color: #e9ebeb;
+}
+
+.boxContato .fotoUsuario {
+	width: 3.2rem;
+}
+
+.ifoUsuario {
+	margin-left: -0.8rem;
+	padding: -1rem;
+	display: inline-block;
+	align-items: flex;
+}
+
+.ifoUsuario p,
+.infoMenssage p {
+	margin: 0;
+}
+
+.nomeUsuario {
+	font-size: 1rem;
+	color: #000;
+	display: flex;
+	margin-left: 1rem;
+	padding-left: 1.9rem;
+}
+.previewMenssage {
+	font-size: 1rem;
+	color: #454545;
+	padding-left: 1rem;
+}
+
+.fa-check-double {
+	margin-right: 0.2rem;
+	color: #4fc3f7;
+}
+
+#checkDouble {
+	padding-right: 3px;
+	margin: 2px;
+	color: #4fc3f7;
+}
+
+#Onecheck {
+	padding: 0.2rem;
+	color: gray;
+}
+
+.infoMenssage {
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	display: inline-block;
+}
+
+.infoMenssage .horario {
+	font-size: 12px;
+	margin-bottom: 5px;
+	color: #ccc;
+}
+
+.menssagePendente {
+	background-color: #04fa67;
+	color: #fff;
+	width: 19px;
+	height: 19px;
+	line-height: 19px;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 50%;
+	text-align: center;
+	float: right;
+}
+
+/* CHAT */
+
+/* Container Chat */
+#chatArea {
+	position: absolute;
+	top: 0;
+	left: 410px;
+	width: calc(100% - 410px);
+	height: 100%;
+	background-color: #ccc;
+}
+
+/* Chat Navbar */
+#chatNavBar {
+	height: 3.8rem;
+	background-color: #eee;
+	border-left: 1px solid #ddd;
+}
+
+#chatNavBar p {
+	float: right;
+	margin-left: -1.5rem;
+}
+
+#containerContactInfo {
+	display: inline-block;
+}
+
+#containerContactInfo .nomeUsuario {
+	font-size: 16px;
+	height: 60px;
+	line-height: 60px;
+}
+
+#containerFerramentasChat {
+	float: right;
+	height: 60px;
+	line-height: 60px;
+	margin-right: 20px;
+}
+
+#containerFerramentasChat li {
+	display: inline-block;
+	margin: 0 15px 0 15px;
+	font-size: 18px;
+	color: #80868a;
+	cursor: pointer;
+}
+
+/* Menssagens */
+#containerMenssages {
+	background-color: #e1dad2;
+	height: calc(100% - 120px);
+	position: relative;
+}
+
+#containerMenssages p {
+	margin: 0;
+}
+
+.bg-image {
+	background-image: url('./img/background_whats.png');
+	background-repeat: repeat;
+	opacity: 0.06;
+	width: 100%;
+	height: 100%;
+}
+
+.chatMenssages {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	padding: 1.8rem 5rem;
+	box-sizing: border-box;
+}
+
+.chatMenssages P {
+	display: block;
+	color: #262626;
+	font-size: 1rem;
+	padding: 0.5rem;
+	border-radius: 0.4rem;
+	position: relative;
+	width: 12.5rem;
+}
+
+.remetenteMenssage {
+	background-color: #fff;
+}
+
+.remetenteMenssage:before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-bottom: 1.1rem solid transparent;
+	border-right: 1.1rem solid #fff;
+	position: absolute;
+	top: 0;
+	left: -10px;
+}
+
+.destinMenssage {
+	background-color: #dcf8c6;
+	float: right;
+}
+
+.destinMenssage:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-bottom: 1rem solid transparent;
+	border-left: 1rem solid #dcf8c6;
+	position: absolute;
+	top: 0;
+	right: -1rem;
+}
+
+/* Enviar Menssagem */
+.containerEnviarMenssage {
+	background-color: #efefef;
+	border-left: 1px solid #ddd;
+	height: 60px;
+	padding: 0 15px 0 15px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+#inputUsuario {
+	position: absolute;
+	top: 10px;
+	left: 60px;
+	background-color: #fff;
+	border: none;
+	width: calc(89% - 20px);
+	height: 40px;
+	border-radius: 20px;
+	padding-left: 20px;
+	font-size: 1rem;
+}
+
+.containerEnviarMenssage i {
+	font-size: 24px;
+	color: #80868a;
+	cursor: pointer;
+	height: 60px;
+	line-height: 60px;
+}
+
+.fa-microphone {
+	float: right;
+}
+
+#status {
+	display: inline-block;
+	font-size: 0.8rem;
+	margin-bottom: 0.5rem;
+	position: flex;
+	margin-left: -2rem;
+}
